@@ -3,8 +3,9 @@ This is a web-based system designed for managing reservations and tables in a re
 
 # Prerequisites
 1. Ensure that you have python of version greater than or equal 3.8 and pip3 installed on your device
-2. Install git and github on your device
-3. Install postman for API testing
+2. Install postgres database on your device and CREATE DATABASE restuarant
+3. Install git and github on your device
+4. Install postman for API testing
 # Installation
 To install the project, follow these steps:
 
@@ -39,7 +40,11 @@ In Postman, navigate to the "Collections" tab and select the "Restaurant Managem
 Note that you will need to have the server running locally in order to successfully send requests.
 
 # Additional Note
-In order to be able to test the APIs correctly you must create at least one initial staff member whose role is admin.<br> Then you can start from there by adding other staff members, tables and reservations<br>
+
+* You can find the project's board here <br>
+`https://trello.com/b/olsAMKhq/kanban-template` <br>
+* In order to be able to test the APIs correctly you must create at least one initial staff member whose role is admin.<br> 
+* Then you can start from there by adding other staff members, tables and reservations<br>
 you can do so by `python manage.py shell`
 
 
@@ -54,3 +59,8 @@ you can do so by `python manage.py shell`
 
 
 Kindly note that it's not best practice to save the password in plain form
+
+# TODO
+* Add proper testing
+* Add error handling in more dynamic way
+* Read Dynamic variables from .env file
