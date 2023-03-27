@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     'staff.apps.StaffConfig',
     'table.apps.TableConfig',
+    'reservation.apps.ReservationConfig',
 
     'rest_framework'
 ]
@@ -130,10 +131,15 @@ WSGI_APPLICATION = 'dinesystem.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'restuarant',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': '', # leave empty if using local database
+        'PORT': '', # leave empty if using default port
     }
 }
+
 
 
 # Password validation
@@ -160,7 +166,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Europe/Istanbul'
 
 USE_I18N = True
 
